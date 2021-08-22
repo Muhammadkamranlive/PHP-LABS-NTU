@@ -1,0 +1,138 @@
+Q1#####################################start############################
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lab3Q1</title>
+</head>
+<body>
+
+      <table border="5" >
+          <form action="test.php" method="post">
+           <tbody>
+
+           <tr>
+               <td width="300">
+
+
+                       <label for="fname">First Name</label><br>
+                       <input type="text" name="txtfname" id="fname"  placeholder="First name only" required size="20" maxlength="10" tabindex="2"><br><br>
+                       <label for="lname">Last Name</label><br>
+                       <input type="text" name="txtlname" id="lname" placeholder="Last name only" required size="20" autofocus tabindex="1"  ><br><br>
+                       <label for="dob">Date of Birth</label><br>
+                       <input type="date" name="DateOfBirth" id="dob" placeholder="dd----yyyy"  tabindex="3"><br><br>
+                       <label for="em">Email</label><br>
+                       <input type="email" name="email" id="em" placeholder="Example@domain.com" tabindex="4" accesskey="e"><br><br>
+                       <label for="url">URL</label><br>
+                       <input type="url" name="url" id="url" placeholder="http://mysite.com" tabindex="5" accesskey="u"><br><br>
+                       <label for="tp">Telephone</label><br>
+                       <input type="text" name="telephone" id="tp" placeholder="Eg. +447000 000000" tabindex="6"><br><br>
+                       <label for="ss">Shoesize</label><br>
+                       <input type="number" name="Shoesize" id="ss" placeholder="9" readonly="" tabindex="7"><br><br>
+                       <label for="FSL">Flying Skill Level(1 low-100 high)</label><br>
+                       <input type="range" min="1" max="100" id="FSL" value="1" tabindex="8">
+                      <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                   <p>&nbsp;</p>
+                   <p>&nbsp;</p>
+                 </td>
+
+               <td width="400">
+
+                       <label for="rb">Card Type</label><br><br>
+                       <input type="radio" name="card" value="VISA" id="rb" tabindex="9">VISA
+                       <label for="Mrb">Mastercard</label>
+                       <input type="radio" name="card" value="Mastercard" id="Mrb" tabindex="10">Mastercard
+                       <label for="Arb">AMEX</label>
+                       <input type="radio" name="card" value="AMEX" id="Arb" tabindex="11">AMEX<br><br>
+                       <label for="time">Time</label><br>
+                       <input type="time" name="time"  id="time" placeholder="--:-- --"  tabindex="12"><br><br>
+                   <label for="country">Country</label><br>
+                   <select name="country" id="country"  multiple >
+                       <option value="" disabled selected>Select a Country,man</option>
+                       <option value="Afghanistan">Afghanistan</option>
+                       <option value="Aland Islands">Aland Islands</option>
+                       <option value="Albania">Albania</option>
+                       <option value="Algeria">Algeria</option>
+                   </select>
+                      <br><label for="color">Select Your Favourite color</label>
+                     <input type="color" value="#ff0000" name="color" id="color"><br>
+                       <label for="video">Video Tutorial</label><br>
+                       <video controls="" width="300" height="200" >
+                           <source src="video.mp4" type="video/mp4" id="video">
+                          
+                       </video>
+                       <br><br>
+                       <label for="audio">Audio Tutorial</label><br>
+                       <audio controls="">
+                           <source src="horse.ogv" type="audio/mp3" id="audio">
+                       </audio>
+                       <br>
+                       <input type="submit" value="Submit">
+                       <input type="reset" value="Reset">
+
+                </td>
+              </tr>
+
+
+       </tbody>
+          </form>
+    </table>
+
+</body>
+</html>
+
+Q1 End#####################################################################
+
+
+Q2###################################start###########################################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1:Q2</title>
+</head>
+<body>
+ <tabl >
+     <tr>
+         <td>
+             <svg width="100" height="100">
+                 <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+             </svg>
+         </td>
+         <td>
+             <svg width="400" height="100">
+                 <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+             </svg>
+         </td>
+         <td>
+
+
+             <svg width="400" height="180">
+                 <rect x="50" y="20" rx="20" ry="20" width="100" height="100"
+                       style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+             </svg>
+             <p>&nbsp;</p>
+         </td>
+     </tr>
+ </tabl>
+</body>
+</html>
+#################################################End Q2###########################################
+#
+######################################Satrt Question 3############################################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 Q3</title>
+</head>
+<body>
+
+<iframe width="427" height="409" src="https://www.youtube.com/embed/MhREw8UJ0Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>">
+
+</body>
+</html>

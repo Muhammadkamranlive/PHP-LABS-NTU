@@ -1,0 +1,141 @@
+#####################################3html###################################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="active" style="width: 140px">Home </a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Faculties</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <img src="img.png" alt="Header" >
+    <h1>Welcome to Department of Computer Science</h1>
+    <div class="area">
+        <div class="text">
+            <ul>
+                <li  style="background-color:#1dce4f;font-size: 18px;text-align: center">
+                    <a href="#" style="color: #ffffff">
+                        My Courses
+
+                   </a>
+                </li>
+                <li><a href="#"> Web Application Engineering</a></li>
+                <li><a href="#">Mobile Application Development</a></li>
+                <li><a href="#">Digital Communication</a></li>
+            </ul>
+        </div>
+        <div class="left">
+            <p>Some layout-related positioning attributes are required for a view, and automatically appear when you add the view to the XML. Some layout-related positioning attributes are required for a view, and automatically appear when you add the view to the XML.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+#########################################css###################################3
+*{
+    margin-top: 0%;
+
+}
+.container{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box ;
+}
+.container img{
+    width: 100%;
+}
+h1{
+    color: #61f188;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.navbar{
+    background-color:#1dce4f;
+    height: 70px;
+    overflow: hidden;
+    margin: auto;
+}
+.active{
+    background:#89e4a2;
+    padding:27px;
+    width: 150px;
+    padding-left: 350px;
+    padding-right: 50px;
+
+
+}
+.navbar ul li .active{
+     margin-left: -90%;
+}
+.navbar ul li{
+
+    padding:27px;
+    display: inline-block;
+    list-style-type: none;
+}
+.navbar ul li a{
+    margin-left: -70px;
+    padding:27px;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.area{
+    width: 100%;
+    color: black;
+    margin-top: 20px;
+    align-items: center;
+}
+.left-course{
+    border: 2px solid white;
+    float: right;
+    width: 55%;
+}
+.text{
+    float: left;
+    width: 60%;
+    overflow: hidden;
+}
+
+.text ul li{
+    border-bottom: 1px solid rgb(105, 105, 105);
+    list-style-type: none;
+    width: 45%;
+    padding: 5px;
+    padding-left: 10px;
+    text-align:left;
+    background-color: #89e4a2;
+}
+.text ul li a{
+    text-decoration: none;
+    color: black;
+}
+.left{
+    width: 40%;
+    float: left;
+    margin-left: -25%;
+}
+
+.left p{
+    font-weight: bold;
+    font-size: 1rem;
+
+}

@@ -1,0 +1,135 @@
+##########################Q to 3 ################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab8 18-NTU-1130</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="Jqery.js"></script>
+</head>
+<body>
+    <h1 class="h1">Q1</h1>
+    <h1 class="display-6" id="q2">Heading</h1>
+
+   <div class="container">
+    <h1 class="h1">Q2</h1>
+    <form action="" autocomplete="off">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">lastName</label>
+            <input type="text" class="form-control" id="lastName">
+        </div>
+      
+        <div class="form-group">
+           <button class="btn btn-primary" id="fullName">
+               Submit
+           </button>
+        </div>
+    </form>
+    <div class="form-group">
+        <label for="data">Full Name</label>
+        <input type="text" class="form-control" id="data" name="full">
+    </div>
+   </div>
+ 
+
+   <div class="container">
+    <h1 class="h1">Q3</h1>
+    <input type="text" class="form-control" id="ch" />
+    <button class="btn btn-primary" id="button">Change</button>
+    
+</div>
+
+  
+    
+</body>
+</html>
+
+
+
+
+$(document).ready(function(){
+    //Q1
+        $("#q2").click(function(){
+           $('#q2').css({color:'red',fontfamily:'arial'});
+        })
+})
+//Q2
+$(document).ready(function(){
+         
+    $("#fullName").click(function () {
+        var str1 = $("#firstName").val();
+        var str2 = $("#lastName").val();
+        let str3 = str1.concat(" ",str2);
+       
+        $( "form" ).submit( function(e) {
+            e.preventDefault();
+            $('#data').val(str3);
+        })
+   });
+   //Q3
+
+   $("button").click(function(){
+       $("#ch").attr("type","password");
+   });
+
+});
+
+
+
+
+
+
+
+
+######################Q4 PHP############################
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">
+            Q4
+        </h1>
+        <form action="action.php" method="POST">
+        <div class="form control">
+                <label for="">number1</label>
+                <input type="number" class="form-control" name="number1" id="number1">
+            </div>
+            <div class="form control">
+                <label for="">number2</label>
+                <input type="number" class="form-control" name="number2" id="number2">
+            </div>
+            <div class="form control">
+                
+                <input type="submit" class="btn btn-block btn-primary" value="Calculate" >
+
+            </div>
+            <div class="form-group">
+               <?php  
+               
+                 $Number1=$_POST["number1"];
+                 $Number2=$_POST["number1"];
+                 $Number3=$Number1+$Number2;
+                 
+               ?>
+                <input type="number" class="btn btn-block btn-primary" name="number2" id="number2" value="<?php echo $Number3?>">
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
